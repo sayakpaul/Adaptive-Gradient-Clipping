@@ -42,7 +42,7 @@ def read_tfrecord(example):
 
 def force_image_sizes(dataset, image_size=(96, 96, 3)):
     # explicit size will be needed for TPU
-    reshape_images = lambda image, label: (tf.reshape(image, image_size), label)
+    reshape_images = lambda image, label: (tf.image.resize(image, image_size), label)
     dataset = dataset.map(reshape_images, num_parallel_calls=AUTO)
     return dataset
 
