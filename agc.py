@@ -16,7 +16,7 @@ def compute_norm(x, axis, keepdims):
     return tf.math.reduce_euclidean_norm(x, axis=axis, keepdims=keepdims)
 
 def unitwise_norm(x):
-    if len(tf.squeeze(x).get_shape()) <= 1:  # Scalars and vectors
+    if len(x.get_shape()) <= 1:  # Scalars and vectors
         axis = None
         keepdims = False
     elif len(x.get_shape()) in [2, 3]:  # Linear layers of shape IO or multihead linear
