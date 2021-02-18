@@ -47,7 +47,7 @@ These results SHOULD NOT be treated as conclusive. For details related to traini
 
 ## Acknowledgements
 
-I am thankful to the following resources shared by amazing the community:
+I referred to the following resources during experimentation:
 * [Original JAX implementation of AGC](https://github.com/deepmind/deepmind-research/blob/master/nfnets/agc_optax.py) provided by the authors. 
 * [Ross Wightman's implementation og AGC](https://github.com/rwightman/pytorch-image-models/blob/master/timm/utils/agc.py).
 * [Fast and Lean Data Science materials](https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/fast-and-lean-data-science) provided by GCP. 
