@@ -40,7 +40,7 @@ def read_tfrecord(example):
     one_hot_class = tf.reshape(one_hot_class, [5])
     return image, one_hot_class
 
-def force_image_sizes(dataset, image_size=(96, 96, 3)):
+def force_image_sizes(dataset, image_size=(96, 96)):
     # explicit size will be needed for TPU
     reshape_images = lambda image, label: (tf.image.resize(image, image_size), label)
     dataset = dataset.map(reshape_images, num_parallel_calls=AUTO)
