@@ -31,7 +31,7 @@ In the table below, I summarize results of the two aforementioned notebooks -
 |     Batch Normalization    |            0.002309            |             54.67             |          2.7209         |
 | Adaptive Gradient Clipping |            0.002117            |               52              |          2.6145         |
 
-For these experiments, I used a batch size of 512 each batch having a shape of `(512, 96, 96, 3)` and a clipping factor of 0.01 (application only to AGC).
+For these experiments, I used a batch size of 512 each batch having a shape of `(512, 96, 96, 3)` and a clipping factor of 0.01 (applicable only for AGC).
 
 These results SHOULD NOT be treated as conclusive. For details related to training configuration (i.e. network depth, learning rate, etc.) please refer to the notebooks. 
 
