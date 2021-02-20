@@ -15,7 +15,7 @@ Both of these notebooks are end-to-end executable on Google Colab. Furthermore, 
 Before moving to the findings, please be aware of the following things:
 * The network I have used in order to demonstrate the results is extremely shallow.
 * The network is a mini VGG<sup>3</sup> style network whereas the original paper focuses on ResNet<sup>4</sup> style architectures. 
-* The dataset (**flowers dataset**) consists of ~3500 samples.
+* The dataset (**flowers dataset**) I experimented with consists of ~3500 samples.
 * I clipped gradients of all the layers whereas in the original paper final linear layer wasn't clipped (refer to Section 4.1 of the original paper).
 
 By comparing the training progress of two networks (trained with and without AGC), we see that with AGC network training is more stabilized.
