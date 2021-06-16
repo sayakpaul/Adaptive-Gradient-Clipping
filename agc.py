@@ -34,6 +34,8 @@ def adaptive_clip_grad(parameters, gradients, clip_factor=0.01,
                        eps=1e-3):
     new_grads = []
     for (params, grads) in zip(parameters, gradients):
+        if grads is None:
+            continue
         p_norm = unitwise_norm(params)
         max_norm = tf.math.maximum(p_norm, eps) * clip_factor
         grad_norm = unitwise_norm(grads)
